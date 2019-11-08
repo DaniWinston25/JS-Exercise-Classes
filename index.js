@@ -156,7 +156,7 @@ this.className = className;
 this.favSubjects = favSubjects; 
   }
   listSubjects(){
-   return `Loving HTML, CSS, JS!`;
+   return `Loving ${this.favSubjects.join}`;
   }
   PRAssignment(subject){
     this.subject = subject;
