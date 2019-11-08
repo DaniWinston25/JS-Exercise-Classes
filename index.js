@@ -100,7 +100,7 @@ constructor(model,milesPerGallon){
         + {name} and {location} of course come from the instance's own properties.
 */
 class Lambdasian {
-constructor(name, age, location){
+constructor({name, age, location}){
   this.name = name;
   this.age = age;
   this.location = location;
@@ -125,8 +125,8 @@ speak(){
         + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
 */
 class Instructor extends Lambdasian {
-constructor (name, age, location,speciality, favLanguage, catchPhrase){
-  super(name, age, location)
+constructor ({name, age, location,speciality, favLanguage, catchPhrase}){
+  super({name, age, location})
   this.speciality = speciality;
   this.favLanguage = favLanguage;
   this.catchPhrase = catchPhrase;
