@@ -180,9 +180,24 @@ sprintChallenge(subject){
         + `standUp` a method that takes in a slack channel and returns `{name} announces to {channel}, @channel standy times!`
         + `debugsCode` a method that takes in a student object and a subject and returns `{name} debugs {student.name}'s code on {subject}`
 */
-class ProjectManager {
+class ProjectManager extends Instructor {
+constructor (obj){
+super(obj)
+this.gradClassName = obj.gradClassName;
+this.favInstructor = obj.favInstructor;
 
 }
+standUp(channel){
+  this.channel = channel;
+return `${this.name} announces${channel}, @channel standby times!`; 
+}
+debugsCode(obj){
+  this.student = obj.student;
+  this.subject = obj.subject;
+  return `${this.name} debugs ${this.name}'s code on ${obj.subject}`;
+}
+}
+
 
 /*
   STRETCH PROBLEM (no tests!)
