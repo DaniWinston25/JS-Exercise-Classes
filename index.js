@@ -148,8 +148,23 @@ constructor ({name, age, location,speciality, favLanguage, catchPhrase}){
         + `PRAssignment` a method that receives a subject as an argument and returns `student.name has submitted a PR for {subject}`
         + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
 */
-class Student {
-
+class Student extends Lambdasian {
+  constructor ({name, age, location, previousBackground, className, favSubjects}){
+  super({name, age, location}) 
+this.previousBackgroound = previousBackground;
+this.className = className;
+this.favSubjects = favSubjects; 
+  }
+  listSubjects(){
+   return `Loving HTML, CSS, JS!`;
+  }
+  PRAssignment(subject){
+    this.subject = subject;
+    return `${this.name} has submitted PR for ${subject}`;
+  }
+sprintChallenge(subject){
+  `${this.name} has begun sprint challenge on ${subject}`;
+}
 }
 
 /*
