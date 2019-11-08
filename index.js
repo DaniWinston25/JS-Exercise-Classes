@@ -74,7 +74,15 @@ class Person {
 */
 
 class Car {
+constructor(model,milesPerGallon){
+  this.model = model;
+  this.milesPerGallon = milesPerGallon;
+}
+fill(gallons) {
 
+  this.gallons = gallons;
+  return this.gallons;
+  }
 }
 
 /*
