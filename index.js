@@ -47,8 +47,8 @@ class Person {
      this.stomach = [];
    }
    eat(someFood) {
-     if (this.stomach.length > 10);
-     return this.stomach.push(someFood);
+     if (this.stomach.length > 10){;
+     return this.stomach.push(someFood)};
    };
    
    poop () {
